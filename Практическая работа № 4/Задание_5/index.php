@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-// Ваш массив данных
+
 $album = array(
     array('id_album' => '1','title' => 'The Dark Side of the Moon','date' => '1973','country' => 'Великобритания','id_team' => '2'),
     array('id_album' => '2','title' => 'Wish You Were Here','date' => '1975','country' => 'Великобритания','id_team' => '2'),

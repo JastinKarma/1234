@@ -12,7 +12,17 @@
 	
 	<?php
 	
-		// ...
+		for($i=1; $i<=5; $i++) { 
+			// вариант 1 
+			include "$i.txt";
+			echo "<br />"; 
+		}
+		echo "";
+	for($i=1; $i<=5; $i++) {
+			// вариант 2 
+			require "$i.txt";
+			echo "<br />"; 
+		} 
 		
 	?>
 	
