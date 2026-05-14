@@ -1,0 +1,159 @@
+/* custom.css — Использование нового фона 1234gf.jpeg */
+
+/* Глобальные настройки темы с новым фоном */
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
+    background-color: #0D1A2F !important;
+    
+    /* Подключаем новый файл 1234gf.jpeg с выходом из папки css */
+    background-image: 
+        linear-gradient(rgba(13, 26, 47, 0.45), rgba(80, 10, 31, 0.5)), 
+        url('1234gf.jpeg'),
+        url('../1234gf.jpeg') !important;
+    
+    background-size: 100% 100% !important;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    color: #ffffff !important;
+    
+    /* Убираем размытие для Firefox */
+    image-rendering: -moz-crisp-edges !important;
+    image-rendering: crisp-edges !important;
+}
+
+/* 1. ВЕРХНЯЯ ШАПКА (HEADER) */
+.navbar, .navbar-glass, header nav, header, [class*="navbar"], .bg-dark {
+    background-color: #17364F !important;
+    background: #17364F !important;
+    border-bottom: 1px solid rgba(9, 216, 199, 0.2) !important;
+}
+
+/* Ссылки и логотип в шапке */
+.navbar-brand, header a, .nav-link {
+    color: #09D8C7 !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+}
+
+.navbar-nav .nav-link:hover, .nav-link:hover {
+    color: #ffffff !important;
+    background-color: rgba(9, 216, 199, 0.1) !important;
+}
+
+.navbar-nav .nav-link.active, .nav-link.active {
+    color: #ffffff !important;
+    background-color: #0D1A2F !important;
+}
+
+/* 2. БОКОВАЯ ПАНЕЛЬ НАВИГАЦИИ (SIDEBAR) */
+.sidebar-panel, aside, [class*="sidebar-panel"] {
+    background-color: rgba(23, 54, 79, 0.6) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    min-height: calc(100vh - 74px);
+    border-right: 1px solid rgba(9, 216, 199, 0.2) !important;
+}
+
+.sidebar-link, aside .nav-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    border-radius: 8px !important;
+    margin-bottom: 4px;
+}
+
+.sidebar-link:hover, aside .nav-link:hover {
+    color: #09D8C7 !important;
+    background-color: rgba(9, 216, 199, 0.08) !important;
+}
+
+.sidebar-link.active, aside .nav-link.active {
+    color: #ffffff !important;
+    background-color: #0D1A2F !important;
+    border-left: 3px solid #09D8C7 !important;
+}
+
+/* 3. КАРТОЧКИ СТАТИСТИКИ И КОНТЕНТНЫЙ БЛОК */
+.stat-card, main .bg-white, main > div {
+    background: rgba(23, 54, 79, 0.6) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(9, 216, 199, 0.2) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Фикс белого цвета текста */
+h2, h3, .text-dark, .stat-card span, .fw-bold, .fw-semibold, main h3, main h2, .text-white {
+    color: #ffffff !important;
+}
+
+main p.text-muted, main .text-muted, .text-muted, td.text-muted {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 4. ТАБЛИЦА ПОЛЬЗОВАТЕЛЕЙ И ДАННЫЕ */
+.table-custom, table {
+    background: transparent !important;
+    border: 1px solid rgba(9, 216, 199, 0.2) !important;
+}
+
+table thead th, .table-custom thead th {
+    background-color: #0D1A2F !important;
+    color: #09D8C7 !important;
+    border-bottom: 2px solid rgba(9, 216, 199, 0.3) !important;
+}
+
+table tbody td, table tbody tr td, .text-secondary, div.fw-semibold {
+    color: #ffffff !important;
+    border-bottom: 1px solid rgba(9, 216, 199, 0.1) !important;
+    background: transparent !important;
+}
+
+table tbody tr:hover td {
+    background-color: rgba(9, 216, 199, 0.04) !important;
+}
+
+.custom-login-badge, table tbody td span.badge {
+    background-color: #0D1A2F !important;
+    color: #09D8C7 !important;
+    border: 1px solid rgba(9, 216, 199, 0.3) !important;
+    padding: 4px 8px !important;
+}
+
+/* 5. КНОПКИ ДЕЙСТВИЙ */
+a[href*="edit.php"], .btn-primary {
+    background-color: #09D8C7 !important;
+    border-color: #09D8C7 !important;
+    color: #0D1A2F !important;
+    font-weight: 700 !important;
+    padding: 6px 16px !important;
+    border-radius: 6px !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+}
+a[href*="edit.php"]:hover, .btn-primary:hover {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    color: #0D1A2F !important;
+}
+
+a[href*="delete.php"], .btn-danger {
+    background-color: #BD0927 !important;
+    border-color: #BD0927 !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    padding: 6px 16px !important;
+    border-radius: 6px !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+}
+a[href*="delete.php"]:hover, .btn-danger:hover {
+    background-color: #500A1F !important;
+    border-color: #500A1F !important;
+}
+
+/* 6. ПОДВАЛ (FOOTER) */
+footer, .py-4.mt-auto, [style*="background-color: #0A1931"] {
+    background-color: #17364F !important;
+    background: #17364F !important;
+    border-top: 1px solid rgba(9, 216, 199, 0.2) !important;
+}
